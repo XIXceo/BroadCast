@@ -81,6 +81,7 @@ m.sendMessage(args)
        -2bc  |  لأرسال برود كاست للأونلاين
        -bc | برودكاست عادي
        ** `)
+       -bcA | برودكاست ادمنز
    message.author.sendEmbed(embed)
    
    }
