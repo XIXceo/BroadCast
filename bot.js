@@ -77,9 +77,9 @@ m.sendMessage(args)
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
-       -obc | لأرسال برود كاست للكل
-       -bc  |  لأرسال برود كاست للأونلاين
-       1adminbc | برودكاست عادي
+       -1bc | لأرسال برود كاست للكل
+       -2bc  |  لأرسال برود كاست للأونلاين
+       -bc | برودكاست عادي
        ** `)
    message.author.sendEmbed(embed)
    
