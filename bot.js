@@ -42,7 +42,7 @@ client.on("message", message => {
 client.on('message', message => {
     var  user = message.mentions.users.first() || message.author;
 if (message.content.startsWith("-avatar")) {
-message.channel.send(`هده صورتك  ${user} }`);
+message.channel.send(`هده صورتك  ${user}`);
 }
 });
 
@@ -55,7 +55,7 @@ client.on('ready',  () => {
 
   client.on('message', message => {
     if(!message.channel.guild) return;
-let args = message.content.split(' ').slice(1).join(' ');
+let args = message.content.split(' ').slice(1).join(' **مرحبا بك في سيرفر القراصنة نتمنا ان تستمتع** ');
 if (message.content.startsWith('-bcPRO')){
 if(!message.author.id === '476185102922285066') return;
 message.channel.sendMessage('**جار ارسال الرسالة** |:white_check_mark:')
@@ -80,8 +80,7 @@ m.sendMessage(args)
        -1bc | لأرسال برود كاست للكل
        -2bc  |  لأرسال برود كاست للأونلاين
        -bc | برودكاست عادي
-       ** `)
-       -bcA | برودكاست ادمنز
+       -Abc |ادمنز برودكاست** `)
    message.author.sendEmbed(embed)
    
    }
@@ -89,7 +88,7 @@ m.sendMessage(args)
 
 const developers = ["581660191871991809","id"]
 client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
+    var argresult = message.content.split(` `).slice(1).join('ولكم في سيرفر القراصنة ');
       if (!developers.includes(message.author.id)) return;
       
   if (message.content.startsWith(adminprefix + 'setg')) {
